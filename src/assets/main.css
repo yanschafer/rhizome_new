@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+html, body {
+  overflow-x: hidden!important;
+}
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+:root {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  --a: 41.08% 0.084 253.55;
+  background-color: white;
+  --rhizome: var(--fallback-a,oklch(var(--a)/1));
+  transition: all 0.3s ease-in-out;
+}
+[data-theme="nord"] .btn {
+  font-size: 1.3rem;
+  text-transform: lowercase;
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+
+[data-theme="nord"] .btn-outline:hover {
+  color: white;
+}
+.btn-offer {
+  color: white;
+}
+.heading-big {
+  font-size: 110px;
+}
+.text-highlight {
+  font-weight: 700;
+  color: var(--rhizome);
+}
+.badge {
+  font-size: 0.7rem;
+  border: 0px solid white;
+  font-weight: 700;
+  padding: 0.8rem;
+  border-radius: 50px;
+}
+.badge-accent {
+  background-color: #dfe7f6;
+  color: #2c58a0;
+}
+.badge-default {
+  background-color: #ebedef;
+  color: #40464f;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-small {
+  font-weight: bold;
+  font-size: 24px;
+  -webkit-animation: blink 1s ease-in-out infinite;
+  -moz-animation: blink 1s ease-in-out infinite;
+  -ms-animation: blink 1s ease-in-out infinite;
+  -o-animation: blink 1s ease-in-out infinite;
+  animation: blink 1s ease-in-out infinite;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.navbar {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out ;
+}
+
